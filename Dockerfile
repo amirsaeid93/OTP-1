@@ -5,4 +5,4 @@ WORKDIR /app
 COPY pom.xml /app
 COPY . /app
 RUN mvn package
-CMD ["java", "-jar", "target/timecal.jar"]
+CMD ["java", "-cp", "target/TemperatureConverterAssignement-1.0-SNAPSHOT.jar", "TemperatureConverter"]
