@@ -6,7 +6,7 @@ pipeline{
 
             DOCKERHUB_CREDENTIALS_ID = 'Docker_Hub'
 
-            DOCKERHUB_REPO = 'saeid1993/otp-1'
+            DOCKERHUB_REPO = 'saeid1993/otp_1'
 
             DOCKER_IMAGE_TAG = 'latest'
         }
