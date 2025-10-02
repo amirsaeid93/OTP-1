@@ -20,10 +20,10 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) {
-        // Set up UI components
+
         inputField.setPromptText("Enter temperature");
 
-        // Initialize combo boxes
+
         fromUnitComboBox.getItems().addAll("Celsius", "Fahrenheit", "Kelvin");
         fromUnitComboBox.setValue("Celsius");
 
@@ -41,7 +41,7 @@ public class Main extends Application {
                 toUnitComboBox.getValue(),
                 resultLabel));
 
-        // Create layout
+
         GridPane gridPane = new GridPane();
         gridPane.setHgap(10);
         gridPane.setVgap(10);
@@ -83,7 +83,7 @@ public class Main extends Application {
     }
 
     private double convertTemperatureValue(double value, String fromUnit, String toUnit) {
-        // Convert to Celsius first as base unit
+
         double celsius;
 
         switch (fromUnit) {
@@ -100,7 +100,6 @@ public class Main extends Application {
                 throw new IllegalArgumentException("Unknown from unit: " + fromUnit);
         }
 
-        // Convert from Celsius to target unit
         switch (toUnit) {
             case "Celsius":
                 return celsius;
@@ -113,7 +112,6 @@ public class Main extends Application {
         }
     }
 
-    // Additional Functions to Implement
     private double fahrenheitToCelsius(double fahrenheit) {
         return (fahrenheit - 32) * 5/9;
     }
@@ -126,7 +124,6 @@ public class Main extends Application {
         return celsius + 273.15;
     }
 
-    // Existing function
     private double celsiusToFahrenheit(double celsius) {
         return (celsius * 9/5) + 32;
     }
