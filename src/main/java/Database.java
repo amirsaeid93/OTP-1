@@ -5,7 +5,7 @@ public class Database {
 
     private static final String URL = "jdbc:mysql://127.0.0.1:3306/javafx_mariadb?serverTimezone=UTC&useSSL=false";
     private static final String USER = "root";
-    private static final String PASSWORD = "saeidt";
+    private static final String PASSWORD = "admin";
 
     public static void saveTemperature(double inputValue, String fromUnit,
                                        double convertedValue, String toUnit,
